@@ -1,0 +1,11 @@
+The solution is to always specify the `content` property for pseudo-elements, even if it's an empty string. This ensures consistent behavior.
+
+```css
+div::before {
+  content: ''; /* Explicitly set content, even if empty */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+```
+Adding `content: '';` ensures that the pseudo-element is properly defined and rendered consistently across different browsers.
