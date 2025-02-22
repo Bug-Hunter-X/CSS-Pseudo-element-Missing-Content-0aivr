@@ -1,0 +1,10 @@
+The CSS code uses a pseudo-element, such as ::before or ::after, but does not specify content for it. This can lead to unexpected behavior or rendering issues, depending on the browser and CSS context.  Example:
+
+```css
+div::before {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+```
+This code snippet defines a pseudo-element but doesn't set the `content` property.  Result may be a blue box of 100x100px but the behavior may differ in different browsers.
